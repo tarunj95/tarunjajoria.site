@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Github, Linkedin, Mail } from "lucide-react";
-import { SplashCursor } from "@/components/ui/splash-cursor";
+// import { SplashCursor } from "@/components/ui/splash-cursor";
 import { SparklesText } from "@/components/ui/sparkles-text";
 
 export default function HomePage() {
   return (
     <>
-      <SplashCursor />
+      {/* <SplashCursor /> */}
       <main className="min-h-screen bg-gray-50 p-6 text-gray-900">
         <section className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -49,7 +49,7 @@ export default function HomePage() {
               <CardContent className="p-6">
                 <h2 className="text-2xl font-semibold mb-2">About Me</h2>
                 <p>
-                  I’m a frontend engineer with experience across React, Next.js,
+                  I&apos;m a frontend engineer with experience across React, Next.js,
                   and UI/UX design systems. Passionate about clean code,
                   accessibility, and performance-driven products.
                 </p>
@@ -89,9 +89,9 @@ export default function HomePage() {
             <Card className="md:col-span-2 z-50">
               <CardContent className="p-6 flex justify-between items-center">
                 <div>
-                  <h2 className="text-xl font-semibold">Let's Connect</h2>
+                  <h2 className="text-xl font-semibold">Let&apos;s Connect</h2>
                   <p className="text-sm text-gray-600">
-                    Have an opportunity or idea? I'd love to hear from you.
+                    Have an opportunity or idea? I&apos;d love to hear from you.
                   </p>
                 </div>
                 <Button asChild>
