@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Github, Linkedin, Mail } from "lucide-react";
-// import { SplashCursor } from "@/components/ui/splash-cursor";
-import { SparklesText } from "@/components/ui/sparkles-text";
 
+import { SparklesText } from "@/components/ui/sparkles-text";
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 export default function HomePage() {
   return (
     <>
-      {/* <SplashCursor /> */}
+      <BackgroundBeamsWithCollision>
       <main className="min-h-screen bg-gray-50 p-6 text-gray-900">
         <section className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -102,6 +102,7 @@ export default function HomePage() {
           </section>
         </section>
       </main>
+      </BackgroundBeamsWithCollision>
     </>
   );
 }
