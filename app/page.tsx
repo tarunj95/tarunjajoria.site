@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Github, Linkedin, Mail, Phone } from "lucide-react";
-
+import Script from 'next/script'
 import { FaReact, FaNode, FaGithub, FaDocker, FaAws } from "react-icons/fa"; // Example for React Icons
 
 // import {} from "lucide-react";
@@ -26,7 +26,7 @@ export default function HomePage() {
     }, 800); // simulating loading time
   };
 
-  return (
+  return (<>
     <BackgroundBeamsWithCollision>
       <main className="min-h-screen bg-gray-50 p-6 text-gray-900">
         <section className="max-w-4xl mx-auto">
@@ -181,6 +181,21 @@ export default function HomePage() {
           </section>
         </section>
       </main>
+      
     </BackgroundBeamsWithCollision>
+    <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-59GVFTR4ZG"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-59GVFTR4ZG');
+        `}
+      </Script>
+    </>
   );
 }
